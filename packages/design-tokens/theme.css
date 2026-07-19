@@ -1,0 +1,21 @@
+:root {
+  --journey-paper: #f6f4ef;
+  --journey-paper-solid: #fbfaf7;
+  --journey-card: #ffffff;
+  --journey-ink: #1c2434;
+  --journey-ink-soft: #2a3448;
+  --journey-muted: #626d7d;
+  --journey-faint: #e7e4dc;
+  --journey-line: #ddd9cf;
+  --journey-accent: #2c52e0;
+  --journey-accent-deep: #1e3cb4;
+  --journey-accent-bright: #7ea0ff;
+  --journey-accent-soft: #e9eefd;
+  --journey-dark: #0f1930;
+  --journey-radius-s: 10px;
+  --journey-radius-m: 14px;
+  --journey-radius-l: 20px;
+  --journey-serif: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+  --journey-sans: "Avenir Next", "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --journey-mono: "SFMono-Regular", "Roboto Mono", "Liberation Mono", monospace;
+}

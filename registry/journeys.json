@@ -1,0 +1,24 @@
+[
+  {
+    "id": "toefl-2026",
+    "app": "@journeys/toefl-2026",
+    "title": {
+      "zh": "从 TOEFL 53 分到 100 分",
+      "en": "From TOEFL 53 to 100"
+    },
+    "summary": {
+      "zh": "一名全职程序员如何在工作之外，把碎片时间、真实练习与 AI 反馈连接成一套可运行的学习系统。",
+      "en": "How a full-time software engineer connected fragmented time, deliberate practice, and AI feedback into a working learning system."
+    },
+    "period": "2026.02–2026.07",
+    "metric": "53 → 100",
+    "metricLabel": {
+      "zh": "托福分数",
+      "en": "TOEFL Score"
+    },
+    "publicPath": "/english/toefl-study/",
+    "href": "https://t.zhouchangju.com/english/toefl-study/",
+    "locale": "zh-CN",
+    "status": "completed"
+  }
+]
