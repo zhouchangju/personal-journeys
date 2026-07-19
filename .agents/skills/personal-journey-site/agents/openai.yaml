@@ -1,0 +1,6 @@
+interface:
+  display_name: "Personal Journey Site"
+  short_description: "Create and publish fact-checked story sites"
+  default_prompt: "Use $personal-journey-site to turn my notes into a fact-checked personal story website, sync Homepage, test, and publish only when explicitly requested."
+policy:
+  allow_implicit_invocation: true

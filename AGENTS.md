@@ -68,3 +68,7 @@ Use Conventional Commit prefixes such as `feat:`, `fix:`, `docs:`, and `chore:`.
 ## Architecture and Configuration
 
 Every registry entry must map to an existing package and unique `publicPath`. Update `registry/journeys.json` before exporting Homepage data. Change Vite `base` and registry paths together, and document redirects for migrations.
+
+## Project-local Skill
+
+The reusable workflow for turning personal experiences into fact-checked narrative websites lives at `.agents/skills/personal-journey-site/`. It is the canonical project-local copy; the Codex, Claude, Gemini, OpenCode, and shared Agent skill directories contain symlinks to it. Keep changes to this Skill in this repository so future journey work uses the same workflow and narrative/visualization guidance.
