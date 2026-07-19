@@ -35,7 +35,7 @@ writeFileSync(
 );
 writeFileSync(
   resolve(appDir, "vite.config.js"),
-  `import { defineConfig } from "vite";\n\nexport default defineConfig({\n  base: "/journeys/${slug}/",\n});\n`
+  `import { defineConfig } from "vite";\n\nexport default defineConfig({\n  base: "/career/${slug}/",\n});\n`
 );
 writeFileSync(
   resolve(appDir, "index.html"),
@@ -57,8 +57,8 @@ registry.push({
   period: "TBD",
   metric: "TBD",
   metricLabel: { zh: "指标", en: "Metric" },
-  publicPath: `/journeys/${slug}/`,
-  href: `https://t.zhouchangju.com/journeys/${slug}/`,
+  publicPath: `/career/${slug}/`,
+  href: `https://t.zhouchangju.com/career/${slug}/`,
   locale: "zh-CN",
   status: "in-progress",
 });

@@ -45,5 +45,5 @@ const server = createServer((request, response) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Journey preview: http://${HOST}:${PORT}/english/toefl-study/`);
+  console.log(`Journey preview: http://${HOST}:${PORT}/career/toefl-study/`);
 });

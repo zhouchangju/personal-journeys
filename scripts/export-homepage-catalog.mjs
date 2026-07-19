@@ -21,4 +21,5 @@ const catalog = loadRegistry().map(({ id, title, summary, period, metric, metric
 
 mkdirSync(dirname(outputPath), { recursive: true });
 writeFileSync(outputPath, `${JSON.stringify(catalog, null, 2)}\n`);
+writeFileSync(resolve(dirname(outputPath), "journeys-catalog.json"), `${JSON.stringify(catalog, null, 2)}\n`);
 console.log(`Exported ${catalog.length} journey(s) to ${outputPath}`);

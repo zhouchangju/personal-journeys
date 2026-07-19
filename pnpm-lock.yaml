@@ -8,6 +8,16 @@ importers:
 
   .: {}
 
+  apps/system-architect-2025:
+    dependencies:
+      '@journeys/design-tokens':
+        specifier: workspace:*
+        version: link:../../packages/design-tokens
+    devDependencies:
+      vite:
+        specifier: ^7.0.4
+        version: 7.3.6
+
   apps/toefl-2026:
     dependencies:
       '@journeys/design-tokens':

@@ -13,6 +13,17 @@ This is a pnpm multi-application Monorepo for public, long-form personal journey
 
 Keep raw notes, private material, and credentials in their source repositories, not here.
 
+## Homepage Synchronization
+
+When adding or changing any public journey, Homepage must be updated in the same change. The workflow is:
+
+1. Update `registry/journeys.json` here first.
+2. Run `pnpm export:homepage` to regenerate `../homepage/public/data/journeys.json` and its cache-safe catalog copy.
+3. Run the Homepage tests and build from `../homepage`.
+4. Publish both the journey build and Homepage build together when the task includes deployment.
+
+Do not edit the Homepage journey catalog by hand. If a journey's title, summary, metric, status, canonical URL, or public path changes, treat the generated Homepage catalog as part of the same change.
+
 ## AI-Assisted Change Rules
 
 These rules adapt the [Karpathy Guidelines](https://github.com/multica-ai/andrej-karpathy-skills/blob/main/skills/karpathy-guidelines/SKILL.md) to this repository:
@@ -40,7 +51,7 @@ pnpm export:homepage                 # Generate Homepage catalog
 pnpm create:journey <slug>           # Scaffold and register an app
 ```
 
-The TOEFL development URL is `/english/toefl-study/`; aggregate preview uses the same public path.
+Journey development URLs live under `/career/`; TOEFL uses `/career/toefl-study/` and the aggregate preview uses the same public path.
 
 ## Coding Style and Naming
 

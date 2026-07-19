@@ -29,7 +29,9 @@ pnpm export:homepage
 
 `pnpm build` builds every registered app and assembles static output under `dist/` using the public path from the registry. `pnpm export:homepage` generates the Homepage catalog at `../homepage/public/data/journeys.json` by default.
 
-`pnpm dev` starts the first journey app in development mode. Open `http://127.0.0.1:5173/english/toefl-study/`. `pnpm preview` builds the complete aggregated `dist/` directory and serves the same public path locally.
+When a journey is added or changed, update Homepage in the same workflow: change `registry/journeys.json`, run `pnpm export:homepage`, then build and test the sibling `../homepage` project. The registry and generated Homepage catalog should never be allowed to describe different public journeys.
+
+`pnpm dev` starts the first journey app in development mode. Open `http://127.0.0.1:5173/career/toefl-study/`. `pnpm preview` builds the complete aggregated `dist/` directory and serves the same public path locally.
 
 To preview a different registered app directly, use its workspace package:
 

@@ -44,7 +44,7 @@ Shared foundations should keep the sites recognizable as one author's work witho
 For example, the TOEFL app is assembled as:
 
 ```text
-dist/english/toefl-study/
+dist/career/toefl-study/
 ├── index.html
 └── assets/
 ```
@@ -56,3 +56,9 @@ dist/english/toefl-study/
 `registry/journeys.json` is the source of truth. `pnpm export:homepage` creates a static snapshot at `../homepage/public/data/journeys.json`.
 
 Homepage consumes that snapshot at build time rather than requesting the Monorepo at runtime. This keeps Homepage deployable even if a journey site or the source repository is temporarily unavailable.
+
+This is a two-repository change boundary: a public journey is not complete until its registry entry, generated Homepage catalog, and Homepage build are all updated. After changing a journey, run `pnpm export:homepage` from this repository, then run Homepage's unit tests and build from `../homepage`. The generated `journeys-catalog.json` is the cache-safe runtime copy consumed by Homepage; `journeys.json` remains the checked-in catalog and validation source.
+
+## Public path migration
+
+Journey sites use the `/career/` namespace. The TOEFL journey moved from `/english/toefl-study/` to `/career/toefl-study/`; the registry and Vite base are kept in sync. Existing server deployments should keep the old path as a redirect or compatibility copy during the transition.

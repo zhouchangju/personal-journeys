@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "pnpm --filter @journeys/toefl-2026 dev",
     "dev:toefl": "pnpm --filter @journeys/toefl-2026 dev",
+    "dev:system-architect": "pnpm --filter @journeys/system-architect-2025 dev",
     "validate": "node scripts/validate-journeys.mjs",
     "build": "pnpm validate && node scripts/build-all.mjs",
     "build:toefl": "pnpm --filter @journeys/toefl-2026 build",

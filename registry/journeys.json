@@ -16,8 +16,30 @@
       "zh": "托福分数",
       "en": "TOEFL Score"
     },
-    "publicPath": "/english/toefl-study/",
-    "href": "https://t.zhouchangju.com/english/toefl-study/",
+    "publicPath": "/career/toefl-study/",
+    "href": "https://t.zhouchangju.com/career/toefl-study/",
+    "locale": "zh-CN",
+    "status": "completed"
+  },
+  {
+    "id": "system-architect-2025",
+    "app": "@journeys/system-architect-2025",
+    "title": {
+      "zh": "准备系统架构师考试的这一年",
+      "en": "A Year Preparing for the System Architect Exam"
+    },
+    "summary": {
+      "zh": "2025 年两次系统架构师考试：第一次没过，第二次通过。关于刷题、理解、默写，以及把知识整理成能在考场调用的结构。",
+      "en": "Two system architect exams in 2025: a first failure, a second pass, and the shift from memorizing answers to building recallable structures."
+    },
+    "period": "2025.03–2025.11",
+    "metric": "43 → PASS",
+    "metricLabel": {
+      "zh": "第一次综合 → 第二次结果",
+      "en": "First attempt → Final result"
+    },
+    "publicPath": "/career/system-architect/",
+    "href": "https://t.zhouchangju.com/career/system-architect/",
     "locale": "zh-CN",
     "status": "completed"
   }

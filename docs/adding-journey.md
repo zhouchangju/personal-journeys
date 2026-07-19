@@ -25,8 +25,8 @@ Replace the draft values with real metadata:
   "period": "2027.01–2028.12",
   "metric": "12 → 36",
   "metricLabel": { "zh": "课程数量", "en": "Courses" },
-  "publicPath": "/journeys/omscs-2027/",
-  "href": "https://t.zhouchangju.com/journeys/omscs-2027/",
+  "publicPath": "/career/omscs-2027/",
+  "href": "https://t.zhouchangju.com/career/omscs-2027/",
   "locale": "zh-CN",
   "status": "in-progress"
 }
